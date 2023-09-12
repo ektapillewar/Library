@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="cube-wrapper">
+        <div class="cube-folding">
+            <span class="leaf1"></span>
+            <span class="leaf2"></span>
+            <span class="leaf3"></span>
+            <span class="leaf4"></span>
+        </div>
+        <span class="loading" data-name="Loading">Loading</span>
+    </div>
+
+    <div class="bg"></div>
+    <img src="images/img-1.webp" alt="image" class="left-image">
+    <main class="form-signin">
+        <h1 class="h3"><b>LOGIN</b></h1>
+        <form action="bookstore.html" method="GET">
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="Email" required>
+            </div>
+            <br>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" value="1" name="remember_me" id="rememberMeSwitch">
+                <label class="form-check-label" for="rememberMeSwitch"> Remember me</label>
+            </div> <br>
+            <button class="submit-btn" type="submit">Sign in <a href="bookstore.html"></a></button>
+        </form>
+        <p>Don't have an account? <a href="signup.html" id="signup-link">Sign up</a></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

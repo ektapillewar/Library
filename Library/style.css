@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+
+
+h1 {
+    font-size: 26px;
+    font-weight: 300;
+    font-family: "Archivo Narrow", sans-serif;
+    padding: 50px 20px;
+}
+
+.cube-wrapper {
+    position: relative;
+}
+
+.cube-folding {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    transform: rotate(45deg);
+    font-size: 0;
+}
+
+.cube-folding span {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    transform: scale(1.1);
+}
+
+.cube-folding span::before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    transform-origin: 100% 100%;
+    animation: folding 2.5s infinite linear both;
+}
+
+.cube-folding .leaf2 {
+    transform: rotate(90deg) scale(1.1);
+}
+
+.cube-folding .leaf2::before {
+    animation-delay: 0.3s;
+}
+
+.cube-folding .leaf3 {
+    transform: rotate(270deg) scale(1.1);
+}
+
+.cube-folding .leaf3::before {
+    animation-delay: 0.9s;
+}
+
+.cube-folding .leaf4 {
+    transform: rotate(180deg) scale(1.1);
+}
+
+.cube-folding .leaf4::before {
+    animation-delay: 0.6s;
+}
+
+@keyframes folding {
+
+    0%,
+    10% {
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+
+    25%,
+    75% {
+        transform: perspective(140px) rotateX(0deg);
+        opacity: 1;
+    }
+
+    90%,
+    100% {
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+.cube-wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    margin: auto;
+    width: 90px;
+    height: 6px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    filter: blur(2px);
+    animation: shadow 0.5s ease infinite alternate;
+}
+
+.loading {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    display: block;
+    position: relative;
+    top: 25px;
+    animation: text 0.5s ease infinite alternate;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+@keyframes text {
+    100% {
+        top: 35px;
+    }
+}
+
+.left-image{
+    position: absolute;
+    left:2px;
+    top: 2px;
+    height: 100vh;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(circle at 50% 50%, #363030, #b7a9a9);
+}
+
+.form-floating input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+.form-floating button{
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px; 
+    padding: 15px;
+    margin-right: 100px;
+}
+
+.form-signin h1 {
+    margin-top: 0px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+.form-signin form {
+    padding: 15px;
+}
+
+.form-signin .btn {
+    color: black;
+    width: 500px;
+    height: 25px;
+}
+
+.form-signin .btn:hover,
+.form-signin .btn:focus {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.form-signin .form-control:focus {
+    border-color: #ced4da;
+}
+
+.form-signin .form-control {
+    background: rgba(255, 255, 255, 0.9);
+    width: 300px;
+    height: 30px;
+}
+
+.form-signin .form-check {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.form-signin .form-check label {
+    font-size: 0.9em;
+    color: black;
+}
+
+.form-signin .form-check .form-check-input {
+    width: 20px;
+    height: 15px;
+    margin-right: 0.5em;
+  }
+
+.form-signin .checkbox {
+    margin-bottom: 1rem;
+}
+
+.submit-btn {
+    width: 300px;
+    height: 35px;
+    color: rgb(255, 255, 255);
+    background-color: #3487e0;
+    border-radius: 10px;
+    border: none; 
+}
+
+.submit-btn:hover{
+    background-color:rgb(34, 118, 121) ;
+}

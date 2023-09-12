@@ -1,0 +1,351 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300&family=Ubuntu&display=swap');
+
+
+.navbar{
+    background-color: black;
+    padding: 30px 0;
+    color: white;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li{
+    margin-right: 50px;
+}
+
+.navbar list-style:last-child{
+    margin-right: 0;
+}
+
+.navbar a{
+    color: white ;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+.navbar a:hover{
+    font-weight: bold;
+}
+
+body {
+    background: linear-gradient(to bottom, #f0f7fa, #dbe5f1);
+}
+
+/* Home */
+.homepage {
+    background-image: url("images/img-3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+    text-align: left; 
+    padding-left: 20px; 
+    color: black;
+}
+
+.homepage h1{
+    color: rgb(255, 255, 255);
+}
+
+.homepage h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgba(172, 230, 48, 0.91);
+}
+
+.homepage p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgb(227, 235, 221);
+}
+
+.btn {
+    background-color: #1e4166;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #1a3557;
+    cursor: pointer;
+}
+
+
+/* About */
+.about{
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.about h1{
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #11335d;
+}
+
+.about p{
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 40px;
+    color: #124f4f;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.booklist {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+/* Category Boxes */
+.category-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.category-box {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.category-box h3 {
+    margin-bottom: 10px;
+}
+
+/* Styling for different categories */
+#fiction {
+    border-color: #fc4c4e;
+    background-color: #fcebeb;
+}
+
+#non-fiction {
+    border-color: #4fc54e;
+    background-color: #ecfceb;
+}
+
+#romance {
+    border-color: #4e65fc;
+    background-color: #ebf0fc;
+}
+
+#mystery {
+    border-color: #ad4cfc;
+    background-color: #f0ebfc;
+}
+
+#Mythology {
+    border-color: #696869;
+    background-color: #e6dfdf;
+}
+
+#science-fiction {
+    border-color: #ff6600;
+    background-color: #fff0e6;
+}
+
+/* contact us */
+.contact-container {
+    width: 660px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: linear-gradient(180deg, #12C2D12B 0%, #10C0BE29 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-container button {
+    padding: 10px 20px;
+    background-color: #4c6f95;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-container button:hover {
+    background-color: #071e3b;
+}
+
+
+/* Search  */
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    outline: none;
+}
+
+#suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 300px;
+    top: 100%; 
+    left: 0; 
+    z-index: 1;
+}
+
+#suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#suggestions-list li:hover {
+    background-color: #f1f1f1;
+}
+main {
+    padding: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.category-box {
+    width: calc(30% - 20px);
+    height: 180px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.category-box img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.category-box h2 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+#fiction {
+    border-color: #fc4c4e;
+    background-color: #fcebeb;
+}
+
+#non-fiction {
+    border-color: #4fc54e;
+    background-color: #ecfceb;
+}
+
+#romance {
+    border-color: #4e65fc;
+    background-color: #ebf0fc;
+}
+
+#mystery {
+    border-color: #ad4cfc;
+    background-color: #f0ebfc;
+}
+
+#Mythology {
+    border-color: #696869;
+    background-color: #e6dfdf;
+}
+
+#science-fiction {
+    border-color: #ff6600;
+    background-color: #fff0e6;
+}
+
+main h1{
+    color: #153e71;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: lighter;
+}

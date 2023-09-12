@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="bsstyle.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#book-list">Book Categories</a></li>
+            <li> <a href="#contact-us">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Home -->
+    <div class="homepage" id="home">
+        
+        <h2>Welcome to Our Library</h2>
+        <p>Discover a wide selection of books of every interest</p>
+        <a href="#book-list" class="btn">Explore books</a>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search books...">
+            <ul id="suggestions-list"></ul>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about" id="about">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque modi minima asperiores nobis quasi voluptate ab esse fuga provident soluta id laudantium, quibusdam est exercitationem! Doloremque, molestias in. Est earum unde nulla tempora officia itaque nihil facere iusto repellat aliquam eveniet aperiam suscipit provident voluptatum eligendi, officiis eaque doloremque tenetur eos non explicabo! Pariatur nihil fugiat illo veritatis molestiae corporis excepturi in eveniet aut ratione consequatur voluptatum ad deserunt nulla alias, corrupti tenetur. Magnam, consectetur doloremque! Nisi tenetur mollitia ex neque explicabo dolor quo possimus quod quia, sapiente quae, ut, in molestiae voluptas repellendus velit sint praesentium pariatur nostrum? Ullam accusantium unde incidunt minima, facilis, doloribus, velit fugiat debitis rerum dolore ipsa nam. Dignissimos commodi sunt reprehenderit quidem molestias reiciendis quae tempore itaque, eaque nemo facilis minus earum repellat. At veritatis assumenda expedita fugit, eum sed nisi tempore voluptates maxime voluptatum, nam ipsam mollitia unde recusandae corrupti laboriosam magnam ducimus quam eligendi non necessitatibus laborum in. 
+            Eaque saepe reiciendis, beatae, mollitia culpa expedita corporis nostrum voluptates quibusdam id doloribus sequi corrupti facere sit vero cumque ab laborum harum 
+            similique dicta. Numquam molestiae repudiandae laudantium voluptatibus quibusdam quo praesentium rerum porro ea, est minima beatae cumque soluta dolorum optio dicta dignissimos.</p>
+    </div>
+
+    <!-- Book List -->
+    <main id="book-list">
+        <h1>Book Categories</h1>
+    <div class="categories" id="fiction">
+        <div class="category-box">
+            <img src="images/fiction.jpeg" alt="Fiction icon">
+            <h2><a href="bcindex.html">Fiction</a></h2>
+        </div>
+        <div class="category-box" id="non-fiction">
+            <img src="images/non fiction.jpeg" alt="Non-fiction Icon">
+            <h2><a href="bcindex.html">Non Fiction</a></h2>
+        </div>
+        <div class="category-box" id="romance">
+            <img src="images/romance.jpeg" alt="Romance Icon">
+            <h2><a href="bcindex.html">Romance</a></h2>
+        </div>
+        <div class="category-box" id="mystery">
+            <img src="images/mystery.jpg" alt="Mystery Icon">
+            <h2><a href="bcindex.html">Mystery</a></h2>
+        </div>
+        <div class="category-box" id="mythology">
+            <img src="images/mythology.jpeg" alt="Mythology Icon">
+            <h2><a href="bcindex.html">Mythology</a></h2>
+        </div>
+        <div class="category-box" id="science-fiction">
+            <img src="images/science-fiction.jpeg" alt="Scienece-fiction Icon">
+            <h2><a href="bcindex.html">Science Fiction</a></h2>
+        </div>
+    </div>
+    </main>
+    
+
+    <!-- Contact Us -->
+    <div class="contact-container" id="contact-us">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            
+            <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+    
+            
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+    
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="bscontact.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Category</title>
+    <link rel="stylesheet" href="bcstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li> <a href="#home">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#book-list">Book List</a></li>
+            <li> <a href="#contact-us">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+   
+<div class="search-bar">
+    <input type="text" placeholder="Search for books..." oninput="filterBooks(this.value)">
+    <i class="fas fa-search"></i> 
+    
+</div>
+
+<div class="filters">
+    <label for="sort">Sort By:</label>
+    <select id="sort" onchange="sortBooks()">
+        <option value="title">Title</option>
+        <option value="author">Author</option>
+        <option value="subject">Subject</option>
+        <option value="publish-date">Publish Date</option>
+    </select>
+</div>
+        
+        <div class="book-list"></div>
+    </main>
+    
+    <div class="cart">
+        <h3>Shopping Cart</h3>
+        <div class="cart-items"></div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+    <script src="bcscript.js"></script>
+</body>
+</html>

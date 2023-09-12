@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<body>
+    
+    <div class="center-content">
+        <img src="images/img-2.png" alt="" class="left-img">
+        <div class="form-container">
+            <form action="bookstore.html" method="GET" class="formsu">
+
+                <div class="container">
+                    <h1>SIGN UP</h1>
+                    <input type="text" placeholder="Enter First Name" name="fname" required>
+                    <input type="text" placeholder="Enter Last Name" name="lname" required> <br>
+                    <input type="text" placeholder="Enter Email" name="email" required> <br>
+                    <input type="password" placeholder="Enter password" name="pwd" required> <br>
+                    <input type="password" placeholder="Repeat password" name="pwd-repeat" required> <br>
+                    <input type="tel" placeholder="Phone Number" name="phno" required> <br>
+                    <input type="checkbox" checked="checked" name="Remember" class="chrem"> Remember Me
+
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn"><b>Sign Up</b><a href="bookstore.html"></a></button>
+                        <button type="button" class="cancelbtn"><b>Cancel</b></button>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+    <div class="social-login">
+        <p>Or Login with</p>
+        <button class="loginor" id="facebook" onclick="openFacebook()"><i class="fab fa-facebook"></i></button>
+        <button class="loginor" id="insta" onclick="openInstagram()"><i class="fab fa-instagram"></i></button>
+        <button class="loginor" id="gmail" onclick="openGoogle()"><i class="fab fa-google"></i></button>
+
+    </div>
+
+    <script src="siscript.js"></script>
+</body>
+
+</html>
