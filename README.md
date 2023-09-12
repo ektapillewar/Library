@@ -21,11 +21,19 @@ This is a simple library website consisting of multiple HTML pages, CSS styleshe
    Users can search for books, apply filters, and add books to their cart for checkout.
 
 styles.css (and related stylesheets)
+
 CSS styles for styling the website's layout, forms, and elements.
+
 Each HTML page links to its corresponding CSS stylesheet for styling.
+
 script.js (and related scripts)
+
 JavaScript code for adding interactivity to the website.
+
 script.js is linked to the index.html page for handling animations and form submissions.
+
 siscript.js is linked to the signup.html page for form validation and handling social media login.
+
 bscontact.js is linked to the bookstore.html page for handling form submission and search functionality.
+
 bcscript.js is linked to the bcindex.html page for filtering and sorting books and managing the shopping cart.
