@@ -3,21 +3,22 @@ This is a simple library website consisting of multiple HTML pages, CSS styleshe
 
 # Files and Structure:
 1. index.html
-The main landing page of the library website.
+   The main landing page of the library website.
 
-Contains sections for Home, About Us, Book Categories, and Contact Us.
+   Contains sections for Home, About Us, Book Categories, and Contact Us.
 
-Users can explore book categories, read about the library, and contact the library through a form.
+   Users can explore book categories, read about the library, and contact the library through a form.
+
 2. signup.html
 
-A page for user registration.
+   A page for user registration.
 
-Users can sign up by providing their personal information.
+   Users can sign up by providing their personal information.
 
 3. bookstore.html
-A page displaying various book categories.
+   A page displaying various book categories.
 
-Users can search for books, apply filters, and add books to their cart for checkout.
+   Users can search for books, apply filters, and add books to their cart for checkout.
 
 styles.css (and related stylesheets)
 CSS styles for styling the website's layout, forms, and elements.
